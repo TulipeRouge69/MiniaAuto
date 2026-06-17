@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniaAuto | Voitures Miniatures 1/32 Premium</title>
+    <meta name="description" content="Découvrez notre collection exclusive de voitures miniatures à l'échelle 1/32. Des modèles hyper-réalistes pour les passionnés.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar glass">
+        <div class="logo">
+            <span class="accent">Minia</span>Auto
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#boutique">Collection</a></li>
+            <li><a href="#passion">L'Atelier</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-btn">
+            🛒 <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header id="accueil" class="hero">
+        <canvas id="particles-js"></canvas>
+        <div class="hero-content fade-in">
+            <h1>L'Échelle de la <span class="accent">Perfection</span>.</h1>
+            <p>Des répliques 1/32 exceptionnelles, conçues avec une précision chirurgicale pour les vrais passionnés d'automobile et les collectionneurs exigeants.</p>
+            <a href="#boutique" class="btn primary-btn glow-btn">Découvrir la Collection</a>
+        </div>
+        <div class="hero-image slide-left">
+            <img src="./ferrari_miniature_1774705904601.png" alt="Ferrari 1/32">
+        </div>
+    </header>
+
+    <section id="boutique" class="shop-section">
+        <h2 class="section-title fade-in">Modèles <span class="accent">Phares</span></h2>
+        
+        <div class="product-grid">
+            <div class="product-card glass-card fade-up">
+                <div class="img-container">
+                    <img src="./ferrari_miniature_1774705904601.png" alt="Ferrari 1/32">
+                    <div class="badge">Edition Limitée</div>
+                </div>
+                <div class="product-info">
+                    <h3>Ferrari F40 Competizione</h3>
+                    <p class="scale">Échelle 1/32</p>
+                    <div class="price-row">
+                        <span class="price">149,00 €</span>
+                        <button class="add-to-cart btn-small" data-name="Ferrari F40" data-price="149">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card glass-card fade-up" style="transition-delay: 0.2s;">
+                <div class="img-container">
+                    <img src="./porsche_miniature_1774706090551.png" alt="Porsche 911 1/32">
+                </div>
+                <div class="product-info">
+                    <h3>Porsche 911 GT3 RS</h3>
+                    <p class="scale">Échelle 1/32</p>
+                    <div class="price-row">
+                        <span class="price">129,00 €</span>
+                        <button class="add-to-cart btn-small" data-name="Porsche 911" data-price="129">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="product-card glass-card fade-up" style="transition-delay: 0.4s;">
+                <div class="img-container">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #1f1f1f, #2a2a2a); display: flex; align-items: center; justify-content: center; color: #888;">Nouveau modèle bientôt</div>
+                </div>
+                <div class="product-info">
+                    <h3>Aston Martin Vantage</h3>
+                    <p class="scale">Échelle 1/32</p>
+                    <div class="price-row">
+                        <span class="price">135,00 €</span>
+                        <button class="add-to-cart btn-small" data-name="Aston Martin" data-price="135">Ajouter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL DETAILS SECTION -->
+    <section id="details" class="details-section">
+        <h2 class="section-title fade-in">Précision <span class="accent">Extrême</span></h2>
+        <div class="features-grid">
+            <div class="feature-box fade-up">
+                <div class="feature-icon">🔍</div>
+                <h3>Intérieurs Détaillés</h3>
+                <p>Sièges baquets, compteurs lisibles et volants sport reproduits fidèlement.</p>
+            </div>
+            <div class="feature-box fade-up" style="transition-delay: 0.2s;">
+                <div class="feature-icon">⚙️</div>
+                <h3>Châssis Métal</h3>
+                <p>Alliage die-cast de haute qualité pour un poids ultra-réaliste en main.</p>
+            </div>
+            <div class="feature-box fade-up" style="transition-delay: 0.4s;">
+                <div class="feature-icon">🚪</div>
+                <h3>Ouvrants Actifs</h3>
+                <p>Portières, capot moteur et coffre fonctionnels sur la majorité des modèles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="passion" class="about-section">
+        <div class="about-content fade-in">
+            <h2>L'Art du <span class="accent">Détail</span></h2>
+            <p>Chaque modèle 1/32 de notre collection est peint avec soin, méticuleusement assemblé, et inspecté sous tous les angles pour garantir une finition premium. Parce que l'amour de l'automobile n'a pas d'échelle.</p>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section id="contact" class="newsletter-section glass fade-up">
+        <div class="newsletter-content">
+            <h2>Rejoignez le <span class="accent">Club</span>.</h2>
+            <p>Inscrivez-vous pour être alerté(e) des prochaines éditions limitées et des événements.</p>
+            <form class="newsletter-form">
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Votre adresse e-mail</label>
+                </div>
+                <button type="submit" class="btn primary-btn glow-btn">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content glass">
+            <div class="logo"><span class="accent">Minia</span>Auto</div>
+            <p>© 2026 MiniaAuto - Qualité 1/32 Premium</p>
+        </div>
+    </footer>
+
+    <!-- Panier Glissant -->
+    <div class="cart-sidebar glass" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by JS -->
+            <p class="empty-cart">Votre panier est vide.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="cart-total">0</span> €</div>
+            <button class="btn primary-btn btn-checkout glow-btn">Passer Commande</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
